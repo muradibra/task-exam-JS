@@ -3,25 +3,18 @@ parseInt(inp.value)
 // inp.value = 1
 
 function onInp() {
-
-    if (inp.value > 10) {
-        inp.value = 10
-        console.log(inp.value);
-        return
-    }
-
-    if (inp.valu < 1) {
-        inp.value = 1
-        console.log(inp.value);
-        return
-    }
-
     if(!Number(inp.value)) {
         inp.value = 1
         return
+    } else if (inp.value > 10) {
+        inp.value = 10
+        console.log(inp.value);
+        return
+    } else if (inp.value < 1) {
+        inp.value = 1
+        console.log(inp.value);
+        return
     }
-
-    
 }
 
 function minus() {
